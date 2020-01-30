@@ -66,6 +66,8 @@ if __name__ == "__main__":
             temp = met_data(month, year)
             final_data = final_data + temp
             
+            
+        #avg_data_2013(), avg_data_2014()
         pm = getattr(sys.modules[__name__], 'avg_data_{}'.format(year))()
 
         if len(pm) == 364:
